@@ -12,15 +12,17 @@ let downloads = {};
 
 
 app.get('/download/:pubkey', function (req, res) {
-  let payload = generateRandomString(1);
-  downloads[req.params.pubkey] = sha256(payload, { asString: true });
+  let payload = generateRandomString(1); // 1MB
+  let hash = sha256(payload, { asString: true });
+  downloads[hash] = req.params.pubkey;
   console.log('downloads is now', downloads)
   res.send(payload);
 })
 
-app.get('/downloads', function (req, res) {
+app.get('/downloads/:hash', function (req, res) {
     console.log('called downloads, checking  ', downloads)
-    res.json({ "downloads" : downloads });
+    let downloadRecord = downloads[req.params.hash]
+    res.json(downloadRecord);
 })
 
 app.listen(3001)
