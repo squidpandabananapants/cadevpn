@@ -1,10 +1,10 @@
 # Name and metadata of your task
-task_name: 'EZ Sandbox Testing Task'
-author: 'Koii'
-description: 'Just like Free Token Task without the tokens.'
-repositoryUrl: 'https://github.com/koii-network/task-template' # Replace with your own repo URL
+task_name: 'Connexion Livre'
+author: 'Cadê VPN 🤷'
+description: 'Este é o qualificador para entrar na nossa nova internet - execute esta tarefa para provar que você é um nó confiável e honesto antes de te deixarmos entrar. Precisamos da sua ajuda para manter a internet aberta e livre. || This is the qualifier to join our new internet - run this task to prove you are a reliable and honest node before we let you in. we need your help to keep the internet open and free'
+repositoryUrl: 'https://github.com/squidpandabananapants/cadevpn' # Replace with your own repo URL
 imageUrl: 'imageUrl'
-infoUrl: 'infoUrl'
+infoUrl: 'https://github.com/squidpandabananapants/cadevpn'
 
 # Task executable network: DEVELOPMENT, ARWEAVE, or IPFS
 # IPFS is the default value, as the CLI automatically manages the upload process via the Koii Storage SDK.
@@ -26,10 +26,10 @@ submission_window: 600
 minimum_stake_amount: 0.1
 
 # Task Bounty Type: KOII, KPL
-task_type: 'KOII'
+task_type: 'KPL'
 
 # OPTIONAL (ONLY IF Task Type = KPL) : Token Mint Address, Fire Token as an example here.
-token_type: "FJG2aEPtertCXoedgteCCMmgngSZo1Zd715oNBzR7xpR"
+token_type: "AF1Ac7yf6k35aHycqWf9ghCNNxkEMBQdbe5DkR7UmxAe"
 
 # Total bounty amount: The total bounty amount that will be distributed to the task. (Not accepted in case of update task).
 total_bounty_amount: 10
@@ -41,7 +41,7 @@ allowed_failed_distributions: 3
 
 # Space: Space in MBs for the account size, that holds the task data.
 # For testing tasks this can be set to 0.1, but for production it should be set to at least 1.
-space: 0.1
+space: 1
 
 # Note that the value field in RequirementTag is optional, so it is up to you to include it or not based on your use case.
 # To add more global variables and task variables, please refer to the type, value, description format shown below.
